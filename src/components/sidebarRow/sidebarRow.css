@@ -37,3 +37,9 @@
 .resize .sidebarRow-title {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .sidebarRow-title {
+    display: none;
+  }
+}
