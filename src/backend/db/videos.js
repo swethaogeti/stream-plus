@@ -76,7 +76,7 @@ export const videos = [
   {
     _id: "Q1NKMPhP8PY",
     category: "Telugu movies",
-    thumbnail: "https://i3.ytimg.com/vi/VyHV0BRtdxo/maxresdefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/Q1NKMPhP8PY/maxresdefault.jpg",
     title:
       "Pushpa Official Trailer | Allu Arjun | Rashmika | Fahadh Faasil | Sukumar | DSP",
     description:
@@ -110,7 +110,7 @@ export const videos = [
   {
     _id: "vw61gCe2oqI",
     category: "Sci-Fi",
-    thumbnail: "https://www.youtube.com/watch?v=vw61gCe2oqI",
+    thumbnail: "https://img.youtube.com/vi/vw61gCe2oqI/maxresdefault.jpg",
     title: "Edge of Tomorrow - Official Trailer 1 [HD]",
     description:
       "The epic action of Edge of Tomorrow unfolds in a near future in which an alien race has hit the Earth in an unrelenting assault, unbeatable by any military unit in the world.  ",
@@ -192,7 +192,7 @@ export const videos = [
   {
     _id: "oqxAJKy0ii4",
     category: "K-Drama",
-    thumbnail: "https://www.youtube.com/watch?v=oqxAJKy0ii4",
+    thumbnail: "https://img.youtube.com/vi/oqxAJKy0ii4/maxresdefault.jpg",
     title: "Squid Game | Official Trailer | Netflix",
     description:
       "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
@@ -400,7 +400,7 @@ export const videos = [
   {
     _id: "SDgfvk0lGjo",
     category: "Telugu movies",
-    thumbnail: "https://www.youtube.com/watch?v=SDgfvk0lGjo",
+    thumbnail: "https://img.youtube.com/vi/SDgfvk0lGjo/maxresdefault.jpg",
     title:
       "Aakaasam Nee Haddhu Ra - Teaser (Telugu) | Suriya | G.V. Prakash Kumar | Sudha Kongara",
     description:

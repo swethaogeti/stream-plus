@@ -1,15 +1,94 @@
 .videos {
-  flex: 0.9;
-  background-color: #f9f9f9;
-  padding: 40px 20px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 15px 20px;
   padding-bottom: 0;
-  outline: 1px solid red;
+}
+.btn-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: -0.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .resize-container {
+  display: flex;
   flex: 1;
-  background-color: #f9f9f9;
-  padding: 40px 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+
   padding-bottom: 0;
-  outline: 1px solid red;
+  flex-direction: column;
+}
+.btn-container .category-btn {
+  background: transparent;
+
+  font-size: 0.8rem;
+  margin: 0.2rem 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.7rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.category-btn:hover {
+  background-color: var(--primary-voilet);
+  border: 1px solid var(--primary-voilet);
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.resize-container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  padding-bottom: 0;
+  flex-direction: column;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+.video-card {
+  margin: 0.5rem 0.3rem;
+  width: 300px;
+}
+
+.video-card .thumbnail {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.video-card .flex-div {
+  align-items: flex-start;
+  margin-top: 7px;
+}
+.video-card .flex-div img {
+  margin-right: 10px;
+  border-radius: 50%;
+  outline: 2px solid green;
+}
+
+.video-card .video-info {
+  color: #413f3f;
+  font-size: 13px;
+}
+
+.video-card .flex-div-info {
+  margin-top: 0.5rem;
 }
