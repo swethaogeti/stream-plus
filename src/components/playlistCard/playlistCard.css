@@ -1,0 +1,9 @@
+.playlist-imgBanner .img-display > img {
+  width: 17rem;
+}
+.delete-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}

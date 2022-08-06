@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
 }
-.video-card {
+/* .video-card {
   margin: 0.5rem 0.3rem;
   width: 300px;
 }
@@ -91,4 +91,4 @@
 
 .video-card .flex-div-info {
   margin-top: 0.5rem;
-}
+} */

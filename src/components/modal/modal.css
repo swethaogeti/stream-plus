@@ -1,0 +1,88 @@
+.modalBg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #131313c5;
+}
+
+.modal {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16rem;
+  height: auto;
+  border-radius: 4px;
+  border-color: 2px solid var(--primary-dark);
+  padding: 1rem;
+}
+
+.modal-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-flex > h4 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+
+.modal-btn {
+  cursor: pointer;
+}
+
+.playlist-Items {
+  text-align: start;
+  padding: 5px 0;
+}
+
+.playlist-Items .modal-addItem {
+  display: flex;
+  padding: 2px;
+  cursor: pointer;
+}
+.modal-addItem > input {
+  cursor: pointer;
+}
+.playlist-Items .modal-addItem > span {
+  margin-left: 3px;
+}
+
+.modal-input {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.modal-input > button {
+  width: 5rem;
+  padding: 0.3rem;
+  align-self: flex-end;
+  background-color: var(--primary-voilet);
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-input > input {
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--primary-grey);
+  border-radius: 3px;
+}
+
+.modal-input .modal-des {
+  border: 1px solid var(--primary-grey);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border-radius: 3px;
+}

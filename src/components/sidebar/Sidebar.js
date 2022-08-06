@@ -1,39 +1,62 @@
 import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
-import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
+import ExploreIcon from "@material-ui/icons/Explore";
 import HistoryIcon from "@material-ui/icons/History";
-import WhatsShotIcon from "@material-ui/icons/Whatshot";
-import WatchLAterIcon from "@material-ui/icons/WatchLater";
+import CreateNewFolderIcon from "@material-ui/icons/CreateNewFolder";
+import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAlt";
-import SidebarRow from "../sidebarRow/SidebarRow";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 const Sidebar = ({ active }) => {
   return (
     <div className={active ? "sidebar" : "resize-sidebar"}>
-      <SidebarRow active={active} Icon={HomeIcon} title="home" />
-      <SidebarRow active={active} Icon={WhatsShotIcon} title="Trending" />
-      <SidebarRow
-        active={active}
-        Icon={SubscriptionsIcon}
-        title="Subscription"
-      />
+      <div className="sidebarRow">
+        <Link to="/landing">
+          <HomeIcon className="sidebarRow-icon"></HomeIcon>
+        </Link>
 
-      <SidebarRow
-        active={active}
-        Icon={HistoryIcon}
-        title="History"
-      ></SidebarRow>
+        <p className="sidebarRow-title">Home</p>
+      </div>
 
-      <SidebarRow
-        active={active}
-        Icon={WatchLAterIcon}
-        title="watch Later"
-      ></SidebarRow>
-      <SidebarRow
-        active={active}
-        Icon={ThumbUpAltOutlinedIcon}
-        title="Liked Videos"
-      ></SidebarRow>
+      <div className="sidebarRow">
+        <Link to="/">
+          <ExploreIcon className="sidebarRow-icon"></ExploreIcon>
+        </Link>
+
+        <p className="sidebarRow-title">Explore</p>
+      </div>
+
+      <div className="sidebarRow">
+        <Link to="/playlist">
+          <CreateNewFolderIcon className="sidebarRow-icon"></CreateNewFolderIcon>
+        </Link>
+
+        <p className="sidebarRow-title">Playlist</p>
+      </div>
+
+      <div className="sidebarRow">
+        <Link to="/likes">
+          <ThumbUpAltOutlinedIcon className="sidebarRow-icon"></ThumbUpAltOutlinedIcon>
+        </Link>
+
+        <p className="sidebarRow-title">Likes</p>
+      </div>
+
+      <div className="sidebarRow">
+        <Link to="/watchlater">
+          <WatchLaterIcon className="sidebarRow-icon"></WatchLaterIcon>
+        </Link>
+
+        <p className="sidebarRow-title">Watchlater</p>
+      </div>
+
+      <div className="sidebarRow">
+        <Link to="/history">
+          <HistoryIcon className="sidebarRow-icon"></HistoryIcon>
+        </Link>
+
+        <p className="sidebarRow-title">History</p>
+      </div>
     </div>
   );
 };
