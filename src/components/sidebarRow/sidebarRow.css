@@ -1,25 +1,28 @@
 .sidebarRow {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  flex-direction: column;
+  padding: 10px 10px;
 }
 
 .sidebarRow-icon {
   color: #606060;
   font-size: 1.7rem !important;
+  text-align: center;
+  cursor: pointer;
 }
 
 .sidebarRow-title {
-  flex: 1;
-  margin-left: 20px;
+  /* flex: 1; */
+
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.sidebarRow:hover {
+/* .sidebarRow:hover {
   background-color: lightgray;
   cursor: pointer;
-}
+} */
 
 .sidebarRow:hover > .sidebarRow-icon {
   color: var(--primary-voilet);

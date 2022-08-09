@@ -1,0 +1,18 @@
+.playlistVideosContainer {
+  display: flex;
+}
+
+.playlistVideosVideoContainer {
+  flex: 1;
+  padding: 15px 20px;
+  padding-bottom: 0;
+}
+.playlistVideosVideoContainer .details-longCards .long-card {
+  position: relative;
+}
+
+.playlistVideosContainer .video-delete {
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+}

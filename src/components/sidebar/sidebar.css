@@ -1,3 +1,52 @@
 .sidebar {
-  flex: 0.2;
+  flex: 0.1;
+}
+
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebarRow-icon {
+  color: #606060;
+  font-size: 1.7rem !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebarRow-title {
+  /* flex: 1; */
+
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sidebarRow:hover {
+  /* background-color: lightgray; */
+  cursor: pointer;
+}
+
+.sidebarRow-icon:hover {
+  color: var(--primary-voilet);
+}
+
+.sidebarRow-title:hover {
+  font-weight: bold;
+}
+.resize {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.resize .sidebarRow-title {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebarRow-title {
+    display: none;
+  }
 }

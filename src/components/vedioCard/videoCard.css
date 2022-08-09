@@ -1,0 +1,30 @@
+.video-card {
+  margin: 0.3rem;
+  padding: 0.3rem;
+  width: 20rem;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  background-color: whitesmoke;
+}
+
+.video-card .thumbnail {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.video-card .info-desp {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2rem;
+  word-spacing: 1px;
+  -webkit-line-clamp: 1;
+}
+
+.video-card .abt-container > p {
+  color: var(--secondary-dark);
+  font-size: 0.8rem;
+  padding-top: 0.1rem;
+}

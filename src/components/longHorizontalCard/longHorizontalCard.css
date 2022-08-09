@@ -1,0 +1,48 @@
+.longHorizontalCard {
+  display: flex;
+  padding: 0.3em;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+}
+
+.longCard-image > img {
+  width: 120px;
+}
+
+.longCard-info {
+  padding-left: 0.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.longHorizontalCard:hover {
+  background-color: whitesmoke;
+}
+.longCard-info .info-desp {
+  font-size: 0.9rem;
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+.longCard-info > p {
+  font-size: 0.8rem;
+  color: gray;
+  padding-top: 0.2rem;
+}
+
+.longHorizontalCard .delete-icon {
+  color: var(--secondary-dark);
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  display: none;
+  font-size: 1.5rem;
+  word-spacing: 1px;
+}
+
+.longHorizontalCard:hover .delete-icon {
+  display: block;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import VideoCard from "../vedioCard/VideoCard";
 import "./videosContainer.css";
 const Videos = ({ active, videoList, filterCategory, categories }) => {
   console.log(filterCategory);
@@ -21,22 +22,7 @@ const Videos = ({ active, videoList, filterCategory, categories }) => {
       </div>
       <div className="flex-container">
         {videoList.map((video, index) => {
-          return (
-            <div className="video-card" key={index}>
-              <img className="thumbnail" src={video.thumbnail}></img>
-              <div className="flex-div">
-                <div className="video-info">
-                  <h4>{video.title}</h4>
-                  <div className="flex-div-info">
-                    <p>{video.creator}</p>
-                    <p>
-                      {video.views} views &bull; {video.uploadedAt}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
+          return <VideoCard video={video} />;
         })}
       </div>
     </div>

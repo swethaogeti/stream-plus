@@ -9,7 +9,6 @@ const Navbar = ({ toggleActive }) => {
     <div>
       <div className="navbar">
         <div className="nav-left">
-          <MenuIcon className="nav-icon" onClick={toggleActive}></MenuIcon>
           <Link to="/" className="link">
             <h1 className="nav-logo">STREAM +</h1>
           </Link>

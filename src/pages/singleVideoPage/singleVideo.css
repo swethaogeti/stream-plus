@@ -1,0 +1,63 @@
+.singleVideoContainer {
+  display: flex;
+}
+
+.singleVideoSidebar {
+  flex: 0.1;
+}
+
+.videoDisplay {
+  padding-top: 1rem;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+}
+.videoDisplay > iframe {
+  width: fit-content;
+}
+
+.videoTitle {
+  color: var(--primary-dark);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  text-align: left;
+  padding: 0.8rem 0.8rem 0.8rem 0;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.info-container > p {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.icons-container > .icon {
+  padding: 0 0.4rem;
+  font-size: 2.7rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.videoDisplay > hr {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.suggestedVideos {
+  flex: 0.1;
+  padding: 1rem;
+}
+
+.videoDesp {
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--secondary-dark);
+  padding: 0 0.5rem;
+}

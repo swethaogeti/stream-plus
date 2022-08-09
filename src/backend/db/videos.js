@@ -9,7 +9,7 @@ export const videos = [
     category: "K-Drama",
     thumbnail: "https://i3.ytimg.com/vi/qrbVy_HhVjg/maxresdefault.jpg",
     title:
-      "Descendants of the Sun - Trailer | Song Joong Ki & Song Hye Kyo's 2016 New Korean Drama",
+      "Descendants of the Sun - Trailer | Song Joong Ki & Song Hye Kyo's 2016 New Korean Drama ",
     description:
       "Descendants of the Sun” is a 2016 South Korean drama series directed by Lee Eung Bok. The entire series was pre-produced prior to airing, which is a departure from how Korean dramas are typically produced. The stars and production team spent one month in Greece to film much of the series’ storyline. The drama also is the first project for Song Joong Ki after finishing his mandatory two-year military service.",
     creator: "Viki Global TV",
@@ -55,7 +55,8 @@ export const videos = [
     _id: "VyHV0BRtdxo",
     category: "Fantasy",
     thumbnail: "https://i3.ytimg.com/vi/VyHV0BRtdxo/maxresdefault.jpg",
-    title: "Harry Potter and the Sorcerer's Stone (2001) Official Trailer",
+    title:
+      "Harry Potter and the Sorcerer's Stone (2001) Official Trailer - Daniel Radcliffe Movie HD",
     description:
       "Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School of Witchcraft and Wizardry.",
     creator: "Movieclips classic Trailers",
@@ -78,7 +79,7 @@ export const videos = [
     category: "Telugu movies",
     thumbnail: "https://img.youtube.com/vi/Q1NKMPhP8PY/maxresdefault.jpg",
     title:
-      "Pushpa Official Trailer | Allu Arjun | Rashmika | Fahadh Faasil | Sukumar | DSP",
+      "Pushpa Official Trailer | Allu Arjun | Rashmika | Fahadh Faasil | Sukumar | DSP | 17th Dec",
     description:
       "Pushpa Official Trailer on Mythri Movie Makers. Written and Directed by Sukumar. Produced by Naveen Yerneni and Y. Ravi Shankar of Mythri Movie Makers in association with Muttamsetty Media, the film stars Allu Arjun, Fahadh Faasil and Rashmika Mandanna, Dhanunjay, Rao Ramesh,Suneel, Anasuya Bharadwaj & Ajay Ghosh.",
     creator: "Mythri Movie Makers",
@@ -135,7 +136,7 @@ export const videos = [
     category: "Fantasy",
     thumbnail: "https://i3.ytimg.com/vi/r5X-hFf6Bwo/maxresdefault.jpg",
     title:
-      "he Lord of the Rings: The Return of the King Official Trailer #1 - (2003) HD",
+      "The Lord of the Rings: The Return of the King Official Trailer #1 - (2003) HD",
     description:
       "The former Fellowship of the Ring prepare for the final battle for Middle Earth, while Frodo (Elijah Wood) & Sam (Sean Astin) approach Mount Doom to destroy the One Ring.",
     creator: "Movieclips",
@@ -147,7 +148,7 @@ export const videos = [
     category: "Fantasy",
     thumbnail: "https://i3.ytimg.com/vi/3mKPrxjwF7A/maxresdefault.jpg",
     title:
-      "🎥 THE CHRONICLES OF NARNIA: The Lion, the Witch and the Wardrobe (2005) ",
+      "🎥 THE CHRONICLES OF NARNIA: The Lion, the Witch and the Wardrobe (2005) | Trailer | Full HD",
     description:
       "Four kids travel through a wardrobe to the land of Narnia and learn of their destiny to free it with the guidance of a mystical lion.",
     creator: "Movie Predictor",
@@ -205,7 +206,7 @@ export const videos = [
     category: "Fantasy",
     thumbnail: "https://i3.ytimg.com/vi/OFVGCUIXJls/maxresdefault.jpg",
     title:
-      "Charlie and the Chocolate Factory (2005) Official Trailer #1 - Johnny Depp Movie HD",
+      "Charlie and the Chocolate Factory (2005) Official Trailer 1 - Johnny Depp Movie HD",
     description:
       "A young boy wins a tour through the most magnificent chocolate factory in the world, led by the world's most unusual candy maker.",
     creator: "Movieclips Classic Trailer",
@@ -217,7 +218,7 @@ export const videos = [
     category: "Telugu movies",
     thumbnail: "https://i3.ytimg.com/vi/NgBoMJy386M/maxresdefault.jpg",
     title:
-      "RRR Trailer (Telugu) - NTR, Ram Charan, Ajay Devgn, Alia Bhatt | SS Rajamouli ",
+      "RRR Trailer (Telugu) - NTR, Ram Charan, Ajay Devgn, Alia Bhatt | SS Rajamouli | 25th March 2022",
     description:
       "From Indian Filmmaker SS Rajamouli (Director of Baahubali) comes India’s Biggest Action Drama #RRRMovie, in theatres March 25th, 2022",
     creator: "DVV Entertainment",
@@ -228,7 +229,7 @@ export const videos = [
     _id: "Ym7tFWmXlw8",
     category: "Telugu movies",
     thumbnail: "https://i3.ytimg.com/vi/Ym7tFWmXlw8/maxresdefault.jpg",
-    title: "Pokiri Trailer",
+    title: "Pokiri Trailer | The swag of pokiri",
     description:
       "okiri ( transl. Rogue) is a 2006 Indian Telugu-language action film written and directed by Puri Jagannadh. ",
     creator: "Indira Productions",
@@ -247,11 +248,11 @@ export const videos = [
     uploadedAt: "2 years ago",
   },
   {
-    _id: "J3_1v8sB48",
+    _id: "lJ3_1v8sB48",
     category: "K-Drama",
     thumbnail: "https://i3.ytimg.com/vi/lJ3_1v8sB48/maxresdefault.jpg",
     title:
-      "HOTEL DEL LUNA - OFFICIAL TRAILER | IU, Yeo Jin Goo, P.O., Kang Mina",
+      "HOTEL DEL LUNA - OFFICIAL TRAILER | IU, Yeo Jin Goo, P.O, Kang Mina",
     description:
       "Cursed for a sin she can no longer remember committing, Man Wol is doomed to spend all of the eternity running this odd establishment, catering to the needs of a most peculiar clientele. Her only hope of escape is to find someone who has committed a worse sin than her own but after a thousand years, she’s beginning to lose hope.",
     creator: "Viki Global TV",
@@ -296,7 +297,8 @@ export const videos = [
     _id: "RJ_bi1qKymA",
     category: "Telugu movies",
     thumbnail: "https://i3.ytimg.com/vi/RJ_bi1qKymA/maxresdefault.jpg",
-    title: "Dookudu Trailer | MaheshBabu,SreenuVaitla ",
+    title:
+      "Dookudu Trailer | MaheshBabu,SreenuVaitla | PSD Editz| Sreenivas Daramukkala",
     description:
       "ookudu ( transl. Aggression) is a 2011 Indian Telugu-language action comedy film directed by Srinu Vaitla and written by Vaitla, Kona Venkat.",
     creator: "Telugu-language",
@@ -319,7 +321,7 @@ export const videos = [
     category: "Fantasy",
     thumbnail: "https://i3.ytimg.com/vi/naQr0uTrH_s/maxresdefault.jpg",
     title:
-      "Pirates of the Caribbean: Dead Men Tell No Tales - Official Trailer",
+      "Pirates of the Caribbean: The Curse of the Black Pearl Official Trailer 1 (2003) HD",
     description:
       "Johnny Depp returns to the big screen as the iconic, swashbuckling anti-hero Jack Sparrow in the all-new “Pirates of the Caribbean: Dead Men Tell No Tales.",
     creator: "Walt Disney Studios",
@@ -367,8 +369,7 @@ export const videos = [
     _id: "dJTU48_yghs",
     category: "Sci-Fi",
     thumbnail: "https://i3.ytimg.com/vi/dJTU48_yghs/maxresdefault.jpg",
-    title:
-      "Her Official Trailer #1 (2013) - Joaquin Phoenix, Scarlett Johansson Movie HD",
+    title: "Her - Joaquin Phoenix, Scarlett Johansson Movie HD",
     description:
       "A lonely writer develops an unlikely relationship with his newly-purchased operating system that's designed to meet his every need. ",
     creator: "Movieclips Trailers",
