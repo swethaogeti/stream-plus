@@ -1,5 +1,7 @@
 .sidebar {
   flex: 0.1;
+  position: sticky;
+  top: 5rem;
 }
 
 .sidebarRow {

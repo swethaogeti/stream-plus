@@ -1,21 +1,27 @@
-import React from "react";
+import { useFilterContext } from "../../context/FilterProvider";
 import VideoCard from "../vedioCard/VideoCard";
 import "./videosContainer.css";
-const Videos = ({ active, videoList, filterCategory, categories }) => {
-  console.log(filterCategory);
+const Videos = ({ videoList, categories }) => {
+  const { dispatchFilter } = useFilterContext();
+
   return (
-    <div className={active ? "videos" : "resize-container"}>
+    <div className="videos">
       <div className=" btn-container">
-        {categories.map((btn, index) => {
+        {categories.map((item) => {
           return (
             <button
               type="button"
-              key={index}
+              key={item._id}
               className="category-btn"
-              value={btn}
-              onClick={() => filterCategory(btn)}
+              value={item.categoryName}
+              onClick={() =>
+                dispatchFilter({
+                  type: "Category",
+                  payload: item.categoryName,
+                })
+              }
             >
-              {btn}
+              {item.categoryName}
             </button>
           );
         })}

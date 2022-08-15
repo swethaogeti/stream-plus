@@ -14,5 +14,6 @@
 .playlistVideosContainer .video-delete {
   position: absolute;
   cursor: pointer;
-  right: 2rem;
+  right: 0rem;
+  top: 0.5rem;
 }

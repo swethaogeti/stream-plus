@@ -36,14 +36,13 @@ const PlaylistVideos = () => {
                           video={video}
                           playlistId={playlistId}
                         />
+                        <DeleteIcon
+                          className="video-delete"
+                          onClick={() =>
+                            deleteVideoFromPlaylist(video._id, playlistId)
+                          }
+                        />
                       </div>
-
-                      <DeleteIcon
-                        className="video-delete"
-                        onClick={() =>
-                          deleteVideoFromPlaylist(video._id, playlistId)
-                        }
-                      />
                     </>
                   );
                 })}
@@ -52,8 +51,8 @@ const PlaylistVideos = () => {
           ) : (
             <div className="explore">
               <img src="https://i0.wp.com/media.giphy.com/media/26wfQrP51M7TJGBiHL/giphy.gif?resize=404%2C404&ssl=1"></img>
-              <Link to="/">
-                <Button>Explore</Button>
+              <Link to="/playlist">
+                <Button>Go Back</Button>
               </Link>
             </div>
           )}

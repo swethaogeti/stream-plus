@@ -8,20 +8,28 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Computer Programming",
-    description:
-      "Computer programming is the process of designing and building an executable computer program to accomplish a specific computing",
+    categoryName: "All",
+    description: "Stream Plus | All categories",
   },
   {
     _id: uuid(),
-    categoryName: "Frontend Development",
-    description:
-      "Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application",
+    categoryName: "Sci-Fi",
+    description: "Stream Plus | Sci-Fi",
   },
   {
     _id: uuid(),
-    categoryName: "Backend Development",
-    description:
-      "Backend Development is also known as server-side development. It is everything that the users don't see and contains behind-the-scenes activities that occur when performing any action on a website.",
+    categoryName: "Fantasy",
+    description: "Stream Plus | Fantasy",
+  },
+  {
+    _id: uuid(),
+    categoryName: "K-Drama",
+    description: "Stream Plus | K-Drama",
+  },
+
+  {
+    _id: uuid(),
+    categoryName: "Telugu movies",
+    description: "Stream Plus | Telugu Movies",
   },
 ];
