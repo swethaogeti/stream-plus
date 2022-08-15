@@ -7,8 +7,8 @@ import axios from "axios";
 const Login = () => {
   const [userLogin, setUserLogin] = useState({ email: "", password: "" });
   const [tester, setTester] = useState({
-    email: "adarshbalika@gmail.com",
-    password: "adarshbalika123",
+    email: "sweety@gmail.com",
+    password: "sweety123",
   });
   const { setUser } = useAuth();
   const navigate = useNavigate();

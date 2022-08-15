@@ -7,9 +7,9 @@ import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAlt";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-const Sidebar = ({ active }) => {
+const Sidebar = () => {
   return (
-    <div className={active ? "sidebar" : "resize-sidebar"}>
+    <div className="sidebar">
       <div className="sidebarRow">
         <Link to="/landing">
           <HomeIcon className="sidebarRow-icon"></HomeIcon>

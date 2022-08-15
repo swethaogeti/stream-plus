@@ -2,44 +2,33 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Videos from "../../components/videosList/VideosContainer";
-import { useState } from "react";
 import "./homePage.css";
 import { useVideosContext } from "../../context/VideosProvider";
+import { useCategoriesContext } from "../../context/CategoriesProvider";
+import { useFilterContext } from "../../context/FilterProvider";
 const HomePage = () => {
-  const [active, setActive] = useState(false);
   const { videos } = useVideosContext();
-  const [allVideos, setAllVideos] = useState(videos);
-  const allCategories = [
-    "all",
-    ...new Set(videos.map((item) => item.category)),
-  ];
 
-  const [categories, setCategories] = useState(allCategories);
+  const { categories } = useCategoriesContext();
+  const {
+    filter: { category },
+  } = useFilterContext();
 
-  const filterCategory = (category) => {
-    if (category === "all") {
-      setAllVideos(videos);
-      return;
-    }
-    const newCategory = videos.filter((item) => item.category === category);
-    setAllVideos(newCategory);
+  const getFilterCategory = (videos, category) => {
+    if (category === "All") return videos;
+
+    return videos.filter((video) => video.category === category);
   };
 
-  const toggleActive = () => {
-    setActive(!active);
-  };
+  const filteredVideos = getFilterCategory(videos, category);
+  console.log("filter videos", filteredVideos);
 
   return (
     <div className="homepage">
-      <Navbar toggleActive={toggleActive} />
+      <Navbar />
       <div className="homeContainer">
-        <Sidebar active={active} />
-        <Videos
-          active={active}
-          videoList={allVideos}
-          categories={categories}
-          filterCategory={filterCategory}
-        />
+        <Sidebar />
+        <Videos videoList={filteredVideos} categories={categories} />
       </div>
     </div>
   );
