@@ -1,4 +1,3 @@
-import React from "react";
 import HistoryIcon from "@material-ui/icons/HistoryOutlined";
 import "./playlistCard.css";
 import { useNavigate } from "react-router-dom";

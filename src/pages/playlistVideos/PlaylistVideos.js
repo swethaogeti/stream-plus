@@ -13,7 +13,7 @@ const PlaylistVideos = () => {
   const { playlistId } = useParams();
   const { playlists, deleteVideoFromPlaylist } = usePlaylistContext();
   const getCurrentPlaylist = playlists.find((item) => item._id === playlistId);
-  console.log(getCurrentPlaylist);
+
   const { videos } = getCurrentPlaylist;
 
   return (

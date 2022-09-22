@@ -1,4 +1,3 @@
-import React from "react";
 import "./horizontalCard.css";
 import { useNavigate } from "react-router-dom";
 import { useHistoryContext } from "../../context/HistoryProvider";

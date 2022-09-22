@@ -1,8 +1,7 @@
 import React from "react";
 import "./longHorizontalCard.css";
 import DeleteIcon from "@material-ui/icons/Delete";
-import { Button } from "@material-ui/core";
-import { matchPath, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useHistoryContext } from "../../context/HistoryProvider";
 
 const LongHorizontalCard = ({

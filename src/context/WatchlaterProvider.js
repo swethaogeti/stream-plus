@@ -1,5 +1,4 @@
 import React, { createContext } from "react";
-import { historyReducer } from "../reducer/servicesReducer";
 import { useAuth } from "./AuthProvider";
 import { useContext, useReducer, useEffect } from "react";
 import axios from "axios";
@@ -11,7 +10,7 @@ const initialState = {
 const WatchlaterProvider = ({ children }) => {
   const { user } = useAuth();
   const [watchlater, dispatch] = useReducer(watchlaterReducer, initialState);
-  console.log("context in wl", watchlater.watchlater);
+
   useEffect(() => {
     const fetchWatchlater = async () => {
       if (user.token) {

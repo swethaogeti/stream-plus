@@ -9,11 +9,8 @@
 .videoPage-flex {
   display: flex;
   flex: 0.9;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   overflow-y: hidden;
-
-  /* outline: 1px solid green; */
 }
 .videoDisplay {
   padding-top: 1rem;
@@ -74,10 +71,9 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 56.25%;
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
 .videoPlayer > iframe {
   position: absolute;
   top: 0;

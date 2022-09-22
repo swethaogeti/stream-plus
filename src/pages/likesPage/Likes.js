@@ -10,7 +10,7 @@ import { useLikesContext } from "../../context/LikesProvider";
 const Likes = () => {
   const { likes, removeVideoFromLike } = useLikesContext();
   const imgBanner = likes[0]?.thumbnail;
-  console.log(likes);
+
   return (
     <div className="likes">
       <Navbar />

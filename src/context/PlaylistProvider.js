@@ -7,7 +7,7 @@ const PlaylistContext = createContext();
 const PlaylistProvider = ({ children }) => {
   const { user } = useAuth();
   const [playlists, dispatch] = useReducer(playlistReducer, []);
-  console.log("this is context playlist", playlists);
+
   useEffect(() => {
     const fetchPlaylist = async () => {
       if (user.token) {

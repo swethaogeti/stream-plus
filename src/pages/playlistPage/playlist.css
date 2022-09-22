@@ -1,7 +1,5 @@
 .playlistContainer {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
 }
 
 .playlistVideoContainer {
@@ -12,12 +10,6 @@
   padding: 15px 20px;
   flex: 1;
 }
-/* .playlistVideoContainer */
-/* .playlistVideoContainer > .imgBanner {
-  margin: 0.5rem;
-  cursor: pointer;
-  border-radius: 2px;
-} */
 
 .playlistImgContainer {
   cursor: pointer;

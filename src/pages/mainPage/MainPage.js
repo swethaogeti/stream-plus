@@ -1,4 +1,3 @@
-import React from "react";
 import "./mainPage.css";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";

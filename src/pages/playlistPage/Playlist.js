@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
@@ -8,7 +7,7 @@ import { usePlaylistContext } from "../../context/PlaylistProvider";
 import "./playlist.css";
 const Playlist = () => {
   const { playlists } = usePlaylistContext();
-  console.log(playlists);
+
   return (
     <div className="playlist">
       <Navbar />

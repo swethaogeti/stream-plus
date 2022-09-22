@@ -1,6 +1,4 @@
-import React from "react";
 import Avatar from "@material-ui/core/Avatar";
-
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import "./navbar.css";

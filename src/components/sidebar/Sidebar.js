@@ -1,4 +1,3 @@
-import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 import ExploreIcon from "@material-ui/icons/Explore";
 import HistoryIcon from "@material-ui/icons/History";

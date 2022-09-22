@@ -14,7 +14,7 @@ const History = () => {
   const imgBanner = history[0]?.thumbnail;
   const { likes, addVideoToLike } = useLikesContext();
   const { watchlater, addVideoToWatchlater } = useWatchlaterContext();
-  console.log("this is watch later ", watchlater);
+
   return (
     <div className="history">
       <Navbar />

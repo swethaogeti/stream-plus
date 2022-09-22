@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./modal.css";
 import ClearIcon from "@material-ui/icons/Clear";
 import { usePlaylistContext } from "../../context/PlaylistProvider";

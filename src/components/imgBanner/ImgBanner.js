@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 
 const ImgBanner = ({ imgBanner }) => {
   const { pathname } = useLocation();
-  console.log(pathname);
+
   return (
     <div className="imgBanner">
       <div className="img-display">
