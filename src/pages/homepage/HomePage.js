@@ -21,7 +21,6 @@ const HomePage = () => {
   };
 
   const filteredVideos = getFilterCategory(videos, category);
-  console.log("filter videos", filteredVideos);
 
   return (
     <div className="homepage">
