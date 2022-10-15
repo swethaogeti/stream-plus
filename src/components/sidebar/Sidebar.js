@@ -10,15 +10,14 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebarRow">
-        <Link to="/landing">
+        <Link to="/">
           <HomeIcon className="sidebarRow-icon"></HomeIcon>
+          <p className="sidebarRow-title">Home</p>
         </Link>
-
-        <p className="sidebarRow-title">Home</p>
       </div>
 
       <div className="sidebarRow">
-        <Link to="/">
+        <Link to="/explore">
           <ExploreIcon className="sidebarRow-icon"></ExploreIcon>
         </Link>
 

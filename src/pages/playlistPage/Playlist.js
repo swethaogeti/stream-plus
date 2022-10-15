@@ -5,6 +5,7 @@ import PlaylistCard from "../../components/playlistCard/PlaylistCard";
 import Sidebar from "../../components/sidebar/Sidebar";
 import { usePlaylistContext } from "../../context/PlaylistProvider";
 import "./playlist.css";
+import image3 from "../../images/image3.png";
 const Playlist = () => {
   const { playlists } = usePlaylistContext();
 
@@ -30,7 +31,7 @@ const Playlist = () => {
             })
           ) : (
             <div className="explore">
-              <img src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/613e3b12dd1556b17a1611cc_wfh-drawkit-thumbnail.png"></img>
+              <img src={image3}></img>
               <Link to="/">
                 <Button>Explore</Button>
               </Link>

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import LongHorizontalCard from "../../components/longHorizontalCard/LongHorizontalCard";
 import "./likes.css";
 import { useLikesContext } from "../../context/LikesProvider";
+import image2 from "../../images/image2.png";
 const Likes = () => {
   const { likes, removeVideoFromLike } = useLikesContext();
   const imgBanner = likes[0]?.thumbnail;
@@ -35,7 +36,7 @@ const Likes = () => {
             </div>
           ) : (
             <div className="explore">
-              <img src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/613e3b12dd1556b17a1611cc_wfh-drawkit-thumbnail.png"></img>
+              <img src={image2}></img>
               <Link to="/">
                 <Button>Explore</Button>
               </Link>

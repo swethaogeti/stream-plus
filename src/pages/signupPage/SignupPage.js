@@ -30,7 +30,7 @@ const Signup = () => {
         user: response.data.createdUser,
         token: response.data.encodedToken,
       });
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       console.log(error.response.data);
     }

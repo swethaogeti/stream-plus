@@ -31,7 +31,7 @@ const Login = () => {
         user: response.data.foundUser,
         token: response.data.encodedToken,
       });
-      navigate("/");
+      navigate("/explore");
     } catch (error) {
       console.log(error);
     }
