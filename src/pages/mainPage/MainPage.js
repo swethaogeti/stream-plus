@@ -68,13 +68,13 @@ const MainPage = () => {
         <div class="footer-container">
           <h3>Made by Swetha Ogeti</h3>
           <div class="social-icons">
-            <a href="#">
+            <a href="https://twitter.com/SwethaOgeti/">
               <TwitterIcon />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/swetha-ogeti/">
               <LinkedInIcon />
             </a>
-            <a href="#">
+            <a href="https://github.com/swethaogeti">
               <GithubIcon />
             </a>
           </div>
