@@ -3,9 +3,13 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";
 import ImageSlider from "../../components/imageSlider/ImageSlider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthProvider";
+
 const MainPage = () => {
   const myArr = [0, 1, 2, 3];
+  const navigate = useNavigate();
+  const { user } = useAuth();
   return (
     <div className="mainPage">
       <ImageSlider />
@@ -17,9 +21,19 @@ const MainPage = () => {
             Make the switch from cable. Get 30+ top shows with your favorite
             movies, shows - plus the entire stream + streaming library.
           </div>
-          <Link to="/login" className="btn">
-            Login
-          </Link>
+          {/* <Link to="/login" className="btn">
+           
+          </Link> */}
+
+          {user.token ? (
+            <Link to="/explore" className="btn">
+              Explore
+            </Link>
+          ) : (
+            <Link to="/login" className="btn">
+              Login
+            </Link>
+          )}
         </div>
       </div>
       <div className="categories">
@@ -30,7 +44,16 @@ const MainPage = () => {
 
         <div className="covers">
           {myArr.map((item, i) => (
-            <div className={`cover-${i}`}>
+            <div
+              className={`cover-${i}`}
+              onClick={() => {
+                if (user.token) {
+                  navigate("/explore");
+                } else {
+                  navigate("/login");
+                }
+              }}
+            >
               <div className="cover-grad"></div>
               <div className="cover-text">
                 <div className="sub-title">Past & Current Season</div>
