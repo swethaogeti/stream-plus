@@ -52,7 +52,6 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  /* outline: 1px solid black; */
 }
 .nav-right .nav-logout > h3 {
   color: var(--secondary-dark);

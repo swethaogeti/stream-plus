@@ -11,6 +11,9 @@
   padding: 4px 8px 6px 8px;
 }
 
+.sidebarRow:hover {
+  color: var(--primary-voilet);
+}
 .sidebarRow-icon {
   color: #606060;
   font-size: 2rem !important;
@@ -18,15 +21,19 @@
   cursor: pointer;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--secondary-gray);
+}
 .sidebarRow-title {
-  /* flex: 1; */
-
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .sidebarRow:hover {
   cursor: pointer;
+  color: var(--primary-voilet);
 }
 
 .sidebarRow-icon:hover {

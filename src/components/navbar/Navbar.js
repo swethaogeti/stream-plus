@@ -4,14 +4,12 @@ import "./navbar.css";
 import { useAuth } from "../../context/AuthProvider";
 
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, setUser } = useAuth();
 
   const navigate = useNavigate();
   const logout = () => {
-    user.token = null;
-    console.log("logout");
-    navigate("/");
-    console.log(user);
+    setUser({ token: null, user: null });
+    navigate("/login");
   };
 
   return (

@@ -5,6 +5,7 @@ import ImgBanner from "../../components/imgBanner/ImgBanner";
 import LongHorizontalCard from "../../components/longHorizontalCard/LongHorizontalCard";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
+import { useAuth } from "../../context/AuthProvider";
 import { useHistoryContext } from "../../context/HistoryProvider";
 import { useLikesContext } from "../../context/LikesProvider";
 import { useWatchlaterContext } from "../../context/WatchlaterProvider";
@@ -15,7 +16,8 @@ const History = () => {
   const imgBanner = history[0]?.thumbnail;
   const { likes, addVideoToLike } = useLikesContext();
   const { watchlater, addVideoToWatchlater } = useWatchlaterContext();
-
+  const { user } = useAuth();
+  console.log(user);
   return (
     <div className="history">
       <Navbar />
