@@ -45,7 +45,7 @@ const History = () => {
           ) : (
             <div className="explore">
               <img src={image1}></img>
-              <Link to="/">
+              <Link to="/explore">
                 <Button>Explore</Button>
               </Link>
             </div>

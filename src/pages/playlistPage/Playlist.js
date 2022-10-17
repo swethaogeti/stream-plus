@@ -32,7 +32,7 @@ const Playlist = () => {
           ) : (
             <div className="explore">
               <img src={image3}></img>
-              <Link to="/">
+              <Link to="/explore">
                 <Button>Explore</Button>
               </Link>
             </div>
