@@ -1,32 +1,39 @@
 .sidebar {
   flex: 0.1;
   position: sticky;
-  top: 5rem;
+  top: 4rem;
 }
 
 .sidebarRow {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 4px 8px 6px 8px;
 }
 
+.sidebarRow:hover {
+  color: var(--primary-voilet);
+}
 .sidebarRow-icon {
   color: #606060;
-  font-size: 1.7rem !important;
+  font-size: 2rem !important;
   text-align: center;
   cursor: pointer;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--secondary-gray);
+}
 .sidebarRow-title {
-  /* flex: 1; */
-
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .sidebarRow:hover {
   cursor: pointer;
+  color: var(--primary-voilet);
 }
 
 .sidebarRow-icon:hover {

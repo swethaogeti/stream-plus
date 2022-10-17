@@ -1,16 +1,22 @@
-import Avatar from "@material-ui/core/Avatar";
 import SearchIcon from "@material-ui/icons/Search";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
 import { useAuth } from "../../context/AuthProvider";
+
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, setUser } = useAuth();
+
+  const navigate = useNavigate();
+  const logout = () => {
+    setUser({ token: null, user: null });
+    navigate("/login");
+  };
 
   return (
     <div className="navbar">
       <div className="nav-left">
         <Link to="/" className="link">
-          <h1 className="nav-logo">STREAM +</h1>
+          <h1 className="nav-logo">STREAM+</h1>
         </Link>
       </div>
       <div className="nav-input">
@@ -18,11 +24,28 @@ const Navbar = () => {
         <SearchIcon className="nav-searchBtn" />
       </div>
 
-      <div className="nav-icons">
-        <Link to="/login">
-          <Avatar />
-          <p>{user?.user?.firstName}</p>
-        </Link>
+      <div className="nav-right">
+        {user.token ? (
+          <div className="nav-logout">
+            <h3>{user?.user?.firstName}</h3>
+            <button onClick={() => logout()}>Logout</button>
+          </div>
+        ) : (
+          <div className="nav-logout">
+            <h3> Hi👋</h3>
+            <button
+              onClick={() => {
+                if (user.token) {
+                  navigate("/explore");
+                } else {
+                  navigate("/login");
+                }
+              }}
+            >
+              LOGIN
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

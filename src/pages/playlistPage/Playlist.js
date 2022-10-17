@@ -5,6 +5,7 @@ import PlaylistCard from "../../components/playlistCard/PlaylistCard";
 import Sidebar from "../../components/sidebar/Sidebar";
 import { usePlaylistContext } from "../../context/PlaylistProvider";
 import "./playlist.css";
+import image3 from "../../images/image3.png";
 const Playlist = () => {
   const { playlists } = usePlaylistContext();
 
@@ -22,7 +23,11 @@ const Playlist = () => {
                     <PlaylistCard
                       playlist={playlist}
                       key={playlist._id}
-                      imgBanner="https://i0.wp.com/media.giphy.com/media/14bCoBnYgL4u0U/giphy.gif?resize=300%2C285&ssl=1"
+                      imgBanner={
+                        playlist.videos[0]
+                          ? playlist.videos[0]?.thumbnail
+                          : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoM6GcvV3RiynA6olre6K9gUJvJ4Xut-Od-b0veqSiuSoZJ25W4hfyjCon9DdOUveyc3s&usqp=CAU"
+                      }
                     ></PlaylistCard>
                   </div>
                 </>
@@ -30,8 +35,8 @@ const Playlist = () => {
             })
           ) : (
             <div className="explore">
-              <img src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/613e3b12dd1556b17a1611cc_wfh-drawkit-thumbnail.png"></img>
-              <Link to="/">
+              <img src={image3}></img>
+              <Link to="/explore">
                 <Button>Explore</Button>
               </Link>
             </div>

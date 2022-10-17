@@ -5,16 +5,19 @@ import ImgBanner from "../../components/imgBanner/ImgBanner";
 import LongHorizontalCard from "../../components/longHorizontalCard/LongHorizontalCard";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
+import { useAuth } from "../../context/AuthProvider";
 import { useHistoryContext } from "../../context/HistoryProvider";
 import { useLikesContext } from "../../context/LikesProvider";
 import { useWatchlaterContext } from "../../context/WatchlaterProvider";
+import image1 from "../../images/image1.png";
 import "./history.css";
 const History = () => {
   const { history, removeVideoFromHistory, clearHistory } = useHistoryContext();
   const imgBanner = history[0]?.thumbnail;
   const { likes, addVideoToLike } = useLikesContext();
   const { watchlater, addVideoToWatchlater } = useWatchlaterContext();
-
+  const { user } = useAuth();
+  console.log(user);
   return (
     <div className="history">
       <Navbar />
@@ -43,8 +46,8 @@ const History = () => {
             </div>
           ) : (
             <div className="explore">
-              <img src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/613e3b12dd1556b17a1611cc_wfh-drawkit-thumbnail.png"></img>
-              <Link to="/">
+              <img src={image1}></img>
+              <Link to="/explore">
                 <Button>Explore</Button>
               </Link>
             </div>

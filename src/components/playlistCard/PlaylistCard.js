@@ -11,18 +11,18 @@ const PlaylistCard = ({ playlist, imgBanner }) => {
   };
 
   const { deletePlaylist } = usePlaylistContext();
-
+  console.log(playlist);
   return (
     <div className="playlist-imgBanner imgBanner">
-      <div className="img-display">
-        <img
-          src={imgBanner}
-          onClick={() => playlistClickHandler(playlist._id)}
-        ></img>
+      <div
+        className="img-display"
+        onClick={() => playlistClickHandler(playlist._id)}
+      >
+        <img src={imgBanner}></img>
       </div>
       <div className="grey-overlay">
         <HistoryIcon />
-        <h4>Playlist</h4>
+        <h4>{playlist.title} </h4>
       </div>
       <div className="delete-icon">
         <DeleteIcon onClick={() => deletePlaylist(playlist._id)} />

@@ -1,5 +1,5 @@
 .video-card {
-  margin: 0.3rem;
+  margin: 0.2rem;
   padding: 0.3rem;
   width: 20rem;
   cursor: pointer;
@@ -11,20 +11,25 @@
 
 .video-card .thumbnail {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .video-card .info-desp {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
   color: black;
-  line-height: 1.2rem;
+
   word-spacing: 1px;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
 }
 
-.video-card .abt-container > p {
+.video-card .abt-container .info-views {
   color: var(--secondary-dark);
-  font-size: 0.8rem;
-  padding-top: 0.1rem;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+.video-card .abt-container .info-creator {
+  color: var(--secondary-dark);
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
 }
