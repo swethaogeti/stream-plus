@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   position: sticky;
   z-index: 100;
   top: 0;
@@ -23,17 +23,18 @@
 }
 
 .nav-input {
-  display: flex;
+  display: none;
   align-items: center;
   width: 40%;
-  border: 2px solid lightgray;
+  border: 3px solid lightgray;
   border-radius: 4px;
   position: relative;
 }
 .nav-input > input {
   flex: 1;
   border: none;
-  padding: 6px 2px;
+  padding: 10px;
+  font-size: 1rem;
 }
 .nav-input > input:focus {
   outline: none;
@@ -41,37 +42,44 @@
 
 .nav-searchBtn {
   width: 50px !important;
-  background-color: #fafafa;
   border-left: 1px lightgray;
   color: grey;
   position: absolute;
   right: 0;
-}
-.nav-icons {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-icon {
-  font-size: 1.8rem;
-  margin-right: 10px;
-  color: var(--primary-dark);
   cursor: pointer;
 }
-
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* outline: 1px solid black; */
+}
+.nav-right .nav-logout > h3 {
+  color: var(--secondary-dark);
+  font-size: 1.3rem;
+}
+.nav-right .nav-logout > button {
+  border: none;
+  padding: 0.2rem;
+  /* color: white; */
+  font-size: 1rem;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--primary-voilet);
+}
 @media (max-width: 1100px) {
   .nav-logo {
     font-size: 1.2rem;
   }
   .nav-input {
     width: 40%;
-    outline: 1px solid gray;
   }
 
   .nav-input > input {
-    flex: 0.1;
-    border: none;
-    padding: 4px 2px;
+    flex: 1;
+
+    padding: 6px;
   }
   .nav-searchBtn {
     width: 20px !important;

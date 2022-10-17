@@ -21,9 +21,6 @@ const MainPage = () => {
             Make the switch from cable. Get 30+ top shows with your favorite
             movies, shows - plus the entire stream + streaming library.
           </div>
-          {/* <Link to="/login" className="btn">
-           
-          </Link> */}
 
           {user.token ? (
             <Link to="/explore" className="btn">

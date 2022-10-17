@@ -10,10 +10,10 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebarRow">
-        <Link to="/">
+        {/* <Link to="/">
           <HomeIcon className="sidebarRow-icon"></HomeIcon>
           <p className="sidebarRow-title">Home</p>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="sidebarRow">
