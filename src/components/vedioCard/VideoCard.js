@@ -20,7 +20,10 @@ const VideoCard = ({ video }) => {
       <img className="thumbnail" src={video.thumbnail}></img>
       <div className="abt-container">
         <div className="info-desp">{video.title}</div>
-        <p>{video.creator}</p>
+        <p className="info-creator">{video.creator}</p>
+        <p className="info-views">
+          {video.views} • {video.uploadedAt}{" "}
+        </p>
       </div>
     </div>
   );

@@ -23,7 +23,11 @@ const Playlist = () => {
                     <PlaylistCard
                       playlist={playlist}
                       key={playlist._id}
-                      imgBanner="https://i0.wp.com/media.giphy.com/media/14bCoBnYgL4u0U/giphy.gif?resize=300%2C285&ssl=1"
+                      imgBanner={
+                        playlist.videos[0]
+                          ? playlist.videos[0]?.thumbnail
+                          : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoM6GcvV3RiynA6olre6K9gUJvJ4Xut-Od-b0veqSiuSoZJ25W4hfyjCon9DdOUveyc3s&usqp=CAU"
+                      }
                     ></PlaylistCard>
                   </div>
                 </>

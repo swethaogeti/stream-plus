@@ -16,6 +16,7 @@ const Videos = ({ videoList, categories }) => {
               style={{
                 backgroundColor: isActive === item._id ? "#8F00FF" : "",
                 color: isActive === item._id ? "white" : "",
+                borderColor: isActive === item._id ? "#8F00FF" : "",
               }}
               type="button"
               key={item._id}

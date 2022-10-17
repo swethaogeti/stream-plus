@@ -4,8 +4,9 @@
   justify-content: space-between;
   padding: 1rem 1.5rem;
   position: sticky;
-  z-index: 100;
+  z-index: 10;
   top: 0;
+
   background-color: white;
 }
 
@@ -60,7 +61,7 @@
 .nav-right .nav-logout > button {
   border: none;
   padding: 0.2rem;
-  /* color: white; */
+
   font-size: 1rem;
   border-radius: 3px;
   font-weight: 500;
@@ -69,7 +70,7 @@
 }
 @media (max-width: 1100px) {
   .nav-logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .nav-input {
     width: 40%;

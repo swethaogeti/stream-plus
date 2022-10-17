@@ -3,7 +3,8 @@
   flex: 1;
   flex-direction: column;
   flex-wrap: wrap;
-  /* padding: 15px 10px; */
+  padding: 0 10px;
+
   padding-bottom: 0;
 }
 .btn-container {
@@ -55,4 +56,11 @@
 .flex-div {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .flex-container {
+    align-items: center;
+    justify-content: center;
+  }
 }

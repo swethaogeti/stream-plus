@@ -51,6 +51,7 @@ const PlaylistVideos = () => {
           ) : (
             <div className="explore">
               <img src="https://i0.wp.com/media.giphy.com/media/26wfQrP51M7TJGBiHL/giphy.gif?resize=404%2C404&ssl=1"></img>
+              <p>Empty Playlist </p>
               <Link to="/playlist">
                 <Button>Go Back</Button>
               </Link>
